@@ -9,6 +9,7 @@ const Navbar = () => {
             <Link href='/'>
                   <Image src='/logo.svg' alt="Car expo logo" width={120} height={20} className="object-contain" />
             </Link>
+         <button  className='rounded-full px-4 py-2 bg-blue-600 sm:bg-orange-600 text-xl font-bold'>Sign In</button>
       </nav>
    </header>
   )
