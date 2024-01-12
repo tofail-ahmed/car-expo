@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Hero = () => {
   const handleScroll = () => {
-    //     return "clicked";
+    console.log("clicked")
   };
 
   return (
@@ -21,13 +21,14 @@ const Hero = () => {
         </p>
         <CustomButton
           title="Explore Cars"
-          containerStyle="bg -primary-blue text-white rounded-full mt-10"
+          containerStyle="bg-primary-blue text-white rounded-full mt-10"
           handleClick={handleScroll}
         ></CustomButton>
       </div>
       <div className="hero__image-container">
         <div className="hero__image">
           <Image src="/hero.png" alt="Hero_image" fill className="object-contain"/>
+          <div className="hero__image-overlay"/>
         </div>
       </div>
     </div>
